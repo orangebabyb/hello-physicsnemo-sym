@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 class CustomGridValidatorPlotter(GridValidatorPlotter):
     def __init__(self, n_examples: int = 1, vmin_vmax_dict: Dict[int, Dict[str, tuple]] = None):
         super().__init__(n_examples)
-        self.vmin_vmax_dict = vmin_vmax_dict or {}  # 結構: { example_idx: { "sol": (vmin, vmax) } }
+        self.vmin_vmax_dict = vmin_vmax_dict or {}  # { example_idx: { "sol": (vmin, vmax) } }
 
     def __call__(
         self,
