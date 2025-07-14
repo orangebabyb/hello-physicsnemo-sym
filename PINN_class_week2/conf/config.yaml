@@ -1,0 +1,7 @@
+defaults:
+  - physicsnemo_default
+  - arch:
+    - fully_connected
+  - optimizer: adam
+  - scheduler: exponential_lr
+  - loss: sum
